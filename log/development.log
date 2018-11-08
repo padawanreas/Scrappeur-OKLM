@@ -9196,3 +9196,616 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 1376ms (Views: 21.5ms | ActiveRecord: 984.1ms)
 
 
+Started GET "/home/index" for 127.0.0.1 at 2018-11-08 16:11:21 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/leo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  [1m[36mCryptoDb Destroy (34.1ms)[0m  [1m[31mDELETE FROM "crypto_dbs"[0m
+  ↳ app/controllers/home_controller.rb:4
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.4ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Bitcoin"], ["value", "$6523.73590991"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.3ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Ethereum"], ["value", "$4443822123.62"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (9.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.8ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "XRP"], ["value", "$17365950.0"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (8.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.3ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Bitcoin Cash"], ["value", "$216.14608093"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (9.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.3ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "EOS"], ["value", "$1593321064.86"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (9.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.3ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Stellar"], ["value", "$103075496.093"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (8.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.3ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Litecoin"], ["value", "$0.516072909226"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (9.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.3ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Cardano"], ["value", "$608404993.772"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (9.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.3ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Monero"], ["value", "$40205508733.0"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (8.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.3ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Tether"], ["value", "$600.362042537"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (9.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.3ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "TRON"], ["value", "$833692136.608"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (9.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.4ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Dash"], ["value", "$17447112.5"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (7.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.2ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "IOTA"], ["value", "$5.59743295728"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (9.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.2ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Binance Coin"], ["value", "$688301596.522"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (9.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.4ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "NEO"], ["value", "$906245117.6"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (8.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.2ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Ethereum Classic"], ["value", "$0.259898921296"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (9.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.2ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "NEM"], ["value", "$75064403.5697"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (9.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.4ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Tezos"], ["value", "$18956700609.7"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (8.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.4ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Zcash"], ["value", "$53.8294689565"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (8.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.3ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "VeChain"], ["value", "$321721689.442"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (8.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.4ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Bitcoin Gold"], ["value", "$59070238.1608"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (7.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.6ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "OmiseGO"], ["value", "$0.078948147678"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (7.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.3ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Maker"], ["value", "$27434168.1507"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (9.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.4ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "0x"], ["value", "$25927070538.0"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (8.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.3ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Dogecoin"], ["value", "$110.910445412"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (9.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.4ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Basic Attenti..."], ["value", "$14169060.5664"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (8.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.4ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Qtum"], ["value", "$16553491.3008"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (9.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.2ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Decred"], ["value", "$0.995604081556"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (9.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.3ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Ontology"], ["value", "$2890717823.27"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (8.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.5ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Lisk"], ["value", "$1776421735.62"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (7.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.5ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Zilliqa"], ["value", "$0.0237393081188"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (7.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.3ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Aeternity"], ["value", "$56103877.7965"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (9.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.6ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Bitcoin Diamond"], ["value", "$65748111645.1"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (7.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.4ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "BitShares"], ["value", "$169.779866712"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (8.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.3ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Nano"], ["value", "$171876715.636"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.4ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Bytecoin"], ["value", "$8432724.50389"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (8.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.2ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "ICON"], ["value", "$0.50029046136"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (9.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.3ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Siacoin"], ["value", "$7379224.86072"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (9.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.3ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Pundi X"], ["value", "$2779530283.0"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (8.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.6ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "DigiByte"], ["value", "$9.81774324591"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (7.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.4ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Steem"], ["value", "$21542365.8714"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (8.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.5ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Verge"], ["value", "$130799315.0"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (7.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.6ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Bytom"], ["value", "$16.6044227586"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (7.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.3ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Waves"], ["value", "$152234950.168"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (8.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.4ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Populous"], ["value", "$65000000.0"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (7.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.5ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Aurora"], ["value", "$9.54569177152"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (7.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.4ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Chainlink"], ["value", "$119250035.996"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (7.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.3ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Metaverse ETP"], ["value", "$105879623.0"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (8.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.4ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Golem"], ["value", "$0.0950976919916"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (7.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.4ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Augur"], ["value", "$6718943.12413"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (8.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.7ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "TrueUSD"], ["value", "$8999999999.0"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.6ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Stratis"], ["value", "$1.31926917494"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (8.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.3ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Holo"], ["value", "$3225261.61684"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (9.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.3ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Electroneum"], ["value", "$607489040.89"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (7.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.4ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "USD Coin"], ["value", "$129.083220747"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (9.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.2ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Komodo"], ["value", "$117387361.013"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (9.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.5ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Paxos Standar..."], ["value", "$5190693.75"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (8.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.3ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Status"], ["value", "$0.0108166359639"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (9.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.3ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Waltonchain"], ["value", "$12347856.6617"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (9.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.4ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Cryptonex"], ["value", "$55454734800.0"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (8.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.6ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "MaidSafeCoin"], ["value", "$30.5057349264"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (8.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.4ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Wanchain"], ["value", "$4437523.3886"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (8.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.4ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Ardor"], ["value", "$17308336.089"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (8.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.5ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "IOST"], ["value", "$3.4434367842"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (7.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.5ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Mithril"], ["value", "$39737767.0023"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (7.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.4ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Aion"], ["value", "$140245398.245"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (7.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.6ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "KuCoin Shares"], ["value", "$658.847166293"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (7.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.3ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "WAX"], ["value", "$524216.296297"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (8.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.3ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Ravencoin"], ["value", "$728227.770106"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (5.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.4ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Nexo"], ["value", "$0.764632593266"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (8.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.4ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Bancor"], ["value", "$11643646.4525"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.5ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Decentraland"], ["value", "$545688412.949"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (7.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.3ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Loopring"], ["value", "$0.00343919574064"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (7.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.3ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "ETERNAL TOKEN"], ["value", "$12615457.5039"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (8.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.4ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "DigixDAO"], ["value", "$1.16904054347e+11"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.4ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "GXChain"], ["value", "$0.371149843339"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (7.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.3ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Ark"], ["value", "$41691053.9413"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (7.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.3ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Huobi Token"], ["value", "$1000000000.0"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (7.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.9ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "aelf"], ["value", "$4.05586626899"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (5.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.3ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Polymath"], ["value", "$123205760.764"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (7.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.3ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "HyperCash"], ["value", "$89020888.0"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (7.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.5ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Veritaseum"], ["value", "$40.0129683331"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.2ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "ReddCoin"], ["value", "$1042937.88163"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (8.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.3ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "PIVX"], ["value", "$8780571.21552"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (8.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.4ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "QASH"], ["value", "$1.68924350807"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.3ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Horizen"], ["value", "$23997867.9239"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (8.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.4ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "MonaCoin"], ["value", "$207016949.0"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.5ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Dai"], ["value", "$2.85881206151"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (6.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.4ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "MOAC"], ["value", "$5300777.09016"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (7.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.5ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Dentacoin"], ["value", "$111955050.065"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (5.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.3ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Crypto.com"], ["value", "$0.0362522815037"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (7.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.3ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "CyberMiles"], ["value", "$13610421.3752"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (7.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (1.0ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Loom Network"], ["value", "$7901840270.97"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (8.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.3ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Nxt"], ["value", "$1.18481589309"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (8.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.3ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "FunFair"], ["value", "$6142754.67157"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (8.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.3ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Nebulas"], ["value", "$233020472.114"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (7.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.3ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Revain"], ["value", "$1.75117873613"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (8.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.3ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Theta Token"], ["value", "$1343434.12359"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (9.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.2ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Mixin"], ["value", "$153756875.0"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (8.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[36mCryptoDb Create (0.4ms)[0m  [1m[32mINSERT INTO "crypto_dbs" ("money", "value") VALUES ($1, $2) RETURNING "id"[0m  [["money", "Power Ledger"], ["value", "$0.0975398477507"]]
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (8.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/services/start_scrap.rb:28
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "crypto_dbs"."money" FROM "crypto_dbs"[0m
+  ↳ app/controllers/home_controller.rb:10
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 1505ms (Views: 141.8ms | ActiveRecord: 921.2ms)
+
+

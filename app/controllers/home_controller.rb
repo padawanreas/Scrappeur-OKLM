@@ -6,7 +6,7 @@ class HomeController < ApplicationController
     @crypto_scrap = StartScrap.new
     @crypto_scrap.perform
     @crypto_scrap.save
-    @crypto= CryptoDb.all
+    @crypto_database = CryptoDb.all
     @crypto_database_name = CryptoDb.all.pluck(:money)
     @name_from_form = params[:crypto]
   end
