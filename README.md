@@ -1,24 +1,35 @@
-# README
+# 💸Crypto Project💸
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+OXOXOXOXOXOXOXOXO![alt text](https://media.giphy.com/media/sVBepfrkz4x2M/giphy.gif)OXOXOXOXOXOXOXOXO
 
-Things you may want to cover:
+## 💾Présentation de l'application💾
 
-* Ruby version
+Cette superbe application permet aux moussaillons de commérer sur leurs co-moussaillons. 
+Voici le lien de l'application en prod sur heroku "https://srappeur-oklm-reas.herokuapp.com/"
 
-* System dependencies
+## 💽Comment utiliser le programme ? 💽
 
-* Configuration
+Cloner le repo, puis entre les commandes suivantes pour préparer le programme
 
-* Database creation
+```
+cd S5J3_the_gossip_proect
+bundle install
+rails db:migrate
+rails server
+rails console
+```
 
-* Database initialization
+## 🎉Contenu de l'application🎉
 
-* How to run the test suite
+* scrap la crypto money
+* Menu déroulant
+* Sors la valeur en fonction du nom de la crypto
+* Front de qualitééééé
 
-* Services (job queues, cache servers, search engines, etc.)
+## 🌈Cohalition pour ce projet🌈
 
-* Deployment instructions
+* Rebecca Bossé
+* Rauana Roupsard
+* Charlotte Vaudour
 
-* ...
+![alt text](https://media.shoko.fr/article-3574479-head-f4/gossip-girl.jpg)
