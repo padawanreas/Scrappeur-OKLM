@@ -12,7 +12,7 @@ Voici le lien de l'application en prod sur heroku "https://srappeur-oklm-reas.he
 Cloner le repo, puis entre les commandes suivantes pour préparer le programme
 
 ```
-cd S5J3_the_gossip_proect
+cd Scrappeur-OKLM
 bundle install
 rails db:migrate
 rails server
@@ -32,4 +32,4 @@ rails console
 * Rauana Roupsard
 * Charlotte Vaudour
 
-![alt text](https://media.shoko.fr/article-3574479-head-f4/gossip-girl.jpg)
+![alt text](http://storage.canalblog.com/92/17/53992/58898791.jpg)
