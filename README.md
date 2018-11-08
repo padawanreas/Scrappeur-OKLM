@@ -32,4 +32,4 @@ rails console
 * Rauana Roupsard
 * Charlotte Vaudour
 
-![alt text](http://storage.canalblog.com/92/17/53992/58898791.jpg)
+![alt text](http://lhybride.org/media/k2/items/cache/c69e8f1ae422a507cd1a8d70ce0bd45c_XL.jpg)
