@@ -1,0 +1,15 @@
+<br><br><br>
+
+<h1 class="text-center"> Selectionne la cryptomonnaie de ton choix !</h1>
+<img class="gif" src="https://media.giphy.com/media/m7FO0p9hTc59e/giphy.gif">
+<div class="container">
+ <%= form_tag('/') do %>
+   <%= select_tag "crypto", options_for_select(@crypto_database_name), class: 'form-control'%><br>
+   <%= submit_tag "Valider", class: "btn btn-success" %>
+ <% end %>
+</div>
+
+ <% if @name_from_form %>
+ <h3 class="text-center" style="color: white">Le cours actuel de la monnaie <%= @name_from_form %>  est de
+ <%= CryptoDb.where(money: @name_from_form).pluck(:value).join %></h3>
+ <% end %>

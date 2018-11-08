@@ -1,0 +1,2 @@
+class CryptoDb < ApplicationRecord
+end
