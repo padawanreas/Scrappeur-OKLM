@@ -1,24 +1,35 @@
-# README
+# 💸Crypto Project💸
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+--------------------------------------------![alt text](https://media.giphy.com/media/sVBepfrkz4x2M/giphy.gif)------------------------------------------
 
-Things you may want to cover:
+## 💾Présentation de l'application💾
 
-* Ruby version
+Cette superbe application permet aux moussaillons de commérer sur leurs co-moussaillons. 
+Voici le lien de l'application en prod sur heroku "https://srappeur-oklm-reas.herokuapp.com/"
 
-* System dependencies
+## 💽Comment utiliser le programme ? 💽
 
-* Configuration
+Cloner le repo, puis entre les commandes suivantes pour préparer le programme
 
-* Database creation
+```
+cd Scrappeur-OKLM
+bundle install
+rails db:migrate
+rails server
+rails console
+```
 
-* Database initialization
+## 🎉Contenu de l'application🎉
 
-* How to run the test suite
+* scrap la crypto money
+* Menu déroulant
+* Sors la valeur en fonction du nom de la crypto
+* Front de qualitééééé
 
-* Services (job queues, cache servers, search engines, etc.)
+## 🌈Cohalition pour ce projet🌈
 
-* Deployment instructions
+* Rebecca Bossé
+* Rauana Roupsard
+* Charlotte Vaudour
 
-* ...
+![alt text](http://lhybride.org/media/k2/items/cache/c69e8f1ae422a507cd1a8d70ce0bd45c_XL.jpg)
