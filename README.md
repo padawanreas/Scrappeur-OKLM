@@ -1,6 +1,6 @@
 # 💸Crypto Project💸
 
---------------------------------------![alt text](https://media.giphy.com/media/sVBepfrkz4x2M/giphy.gif)-----------------------
+--------------------------------------![alt text](https://media.giphy.com/media/sVBepfrkz4x2M/giphy.gif)------------------------------------------
 
 ## 💾Présentation de l'application💾
 
